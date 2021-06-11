@@ -1,0 +1,53 @@
+<html>
+<head>
+<title>Details</title>
+</head>
+<body bgcolor="grey" text="lightgreen">
+<h2 >Nikhil Sharma</h3>
+<h2>20BCE10964</h3>
+<u><b><center><h3>Form</h3></center><br></b></u>
+<form>
+<label type="text">Branch</label>
+<input type="text">
+</form>
+<form>
+<label type="text">Place</label>
+<input type="text">
+</form>
+<form>
+<label type="text">Hobbies</label>
+<input type="text">
+</form>
+<form>
+<label type="text">Co-curricular</label>
+<input type="text">
+</form>
+<form>
+<label type="text">Future Goal</label>
+<input type="text">
+</form>
+<form>
+<label type="text">Password</label>
+<input type="password">
+</form>
+<button type="reset">Reset</button>
+
+<button type="button" onclick="alert('You have successfully submitted the form!')">Submit</button>
+<button type="button" onclick="guessNumber()">Begin game</button>
+<script>
+function guessNumber(){
+const random=Math.floor(Math.random()*10)+1;
+
+let number=parseInt(prompt("Guess the number"));
+
+while(number!==random){
+number= parseInt(prompt('Incorrect number try again'));
+}
+if(number==random){
+alert("Correct number guessed");
+}
+}
+</script>
+</body>
+</html>
+
